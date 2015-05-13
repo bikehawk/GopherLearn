@@ -1,0 +1,22 @@
+ (
+	"bufio
+
+[[RawFileSearchMatchSeparator]]
+
+"io"
+	"str
+
+[[RawFileSearchMatchSeparator]]
+
+io.NewRead
+
+[[RawFileSearchMatchSeparator]]
+
+r.Read(buf
+
+[[RawFileSearchMatchSeparator]]
+
+ err != io
+
+[[RawFileSearchMatchSeparator]]
+
