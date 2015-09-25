@@ -29,6 +29,6 @@ func main() {
 
 	if err == nil {
 		//go use token
-		fmt.Printf("\ntoken = %v\n", token)
+		fmt.Printf("%v", token)
 	}
 }
