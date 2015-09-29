@@ -26,7 +26,7 @@ func init() {
 		defaultPass  = "null"
 		defaultToken = "null"
 	)
-	flag.StringVar(&username, "user", defaultUser, "Your username.")
+
 	flag.StringVar(&username, "u", defaultUser, "Your username. (shorthand)")
 	flag.StringVar(&password, "pass", defaultPass, "Your password.")
 	flag.StringVar(&password, "p", defaultPass, "Your password. (shorthand)")
