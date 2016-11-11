@@ -7,19 +7,20 @@ import (
 )
 
 type Data struct {
-	Host, Path, Method, Proto, RemoteIP string
-	Header                              http.Header
+	Host, Path, RequestURI, Method, Proto, RemoteIP string
+	Header                                          http.Header
 }
 
 func mainHandler(w http.ResponseWriter, r *http.Request) {
 
 	data := &Data{
-		Host:     r.Host,
-		Path:     r.URL.Path,
-		Method:   r.Method,
-		Proto:    r.Proto,
-		RemoteIP: r.RemoteAddr,
-		Header:   r.Header,
+		Host:       r.Host,
+		Path:       r.URL.Path,
+		RequestURI: r.RequestURI,
+		Method:     r.Method,
+		Proto:      r.Proto,
+		RemoteIP:   r.RemoteAddr,
+		Header:     r.Header,
 	}
 
 	fmt.Fprintf(w, "%#v", data)

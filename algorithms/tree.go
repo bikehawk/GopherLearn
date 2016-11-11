@@ -39,13 +39,19 @@ func makeTree(data Data) []*Record {
 
 func main() {
 	data := Data{
-		Record{1, "item1", 0, nil},
-		Record{2, "item2", 1, nil},
-		Record{3, "item3", 2, nil},
-		Record{4, "item4", 7, nil},
-		Record{5, "item5", 0, nil},
-		Record{6, "item6", 2, nil},
-		Record{7, "item7", 3, nil},
+		Record{1, "1", 0, nil},
+		Record{2, "1.1", 1, nil},
+		Record{3, "1.1.1", 2, nil},
+		Record{4, "1.1.1.1.1", 7, nil},
+		Record{5, "2", 0, nil},
+		Record{6, "1.1.2", 2, nil},
+		Record{7, "1.1.1.1", 3, nil},
+		Record{8, "2.1", 5, nil},
+		Record{9, "2.2", 5, nil},
+		Record{10, "2.3", 5, nil},
+		Record{11, "1.2", 1, nil},
+		Record{12, "1.3", 1, nil},
+		Record{13, "1.1.3", 2, nil},
 	}
 
 	tree := makeTree(data)
